@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Aprender - JavaScript</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- 5 - <p style="width: 300px;">Escreva seu nome para que possamos verificar quantas letras tem:</p>
+    <input type="text" name="name" id="name" placeholder="Digite Seu Nome">
+    <input type="button" value="Exibir Quantidade de Caractéres" id="btn"> -->
+
+    <!-- 6/7 - <h1>Clique na Lâmpada!</h1>
+
+    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="Lâmpada Apagada" id="lampada" style="width: 200px;"> -->
+
+    <!-- 7a - <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" placeholder="Digite Seu Nome">
+    <label for="last-name">Sobrenome:</label>
+    <input type="text" name="last-name" id="last-name" placeholder="Digite Seu Sobrenome">
+    
+    <input type="button" value="Saudação!" id="btn">
+    -->
+    <!-- 8 - <label for="cpf">Digite Seu CPF:</label>
+    <input type="text" maxlength="11" id="cpf">
+
+    <input type="button" value="Clique Aqui!" id="btn"> -->
+    
+    <!--  9 - <label for="cpf">Digite Seu CPF:</label>
+    <input type="text" maxlength="14" id="cpf" placeholder="123.456.789-10">
+
+    <input type="button" value="Clique Aqui!" id="btn"> -->
+
+    <label for="num1">Número 1</label>
+    <input type="text" name="num1" id="num1" placeholder="Primeira Parcela">
+    <br><br>
+    
+    <label for="num1">Número 2</label>
+    <input type="text" name="num2" id="num2" placeholder="Segunda Parcela">
+    <br><br>
+
+    <input type="button" value="Clique Aqui para Somar!" id="btn">
+    <br><br>
+    
+    <label for="result">Soma</label>
+    <input type="text" name="soma" id="soma" placeholder="Total">
+    
+    
+    
+    <script type="text/javascript">
+        //  5 - const btn = document.getElementById('btn');
+        // btn.addEventListener("click",  function() {
+        //     const name = document.getElementById('name').value;
+        //     const caracteres = name.length;
+        //     alert('Seu nome tem ' + caracteres + ' caracteres.');     
+        // });
+
+        // 6 - document.getElementById('lampada').addEventListener('click', function() {
+        //     document.getElementById('lampada').src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+        //     document.getElementById('lampada').alt = "Lâmpada Acesa"
+        // });
+
+        // 7 - document.getElementById('lampada').addEventListener('mouseover', function() {
+        //     document.getElementById('lampada').src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+        //     document.getElementById('lampada').alt = "Lâmpada Acesa"
+        // });
+
+        // 7a - const btn = document.getElementById('btn');
+
+        // btn.addEventListener('click', function() {
+        //     const name = document.getElementById('name').value;
+        //     const lastName = document.getElementById('last-name').value;
+
+        //     alert('Olá ' + name + ' ' + lastName);
+        // });
+        
+        // 8 - const btn = document.getElementById('btn');
+
+        // btn.addEventListener('click', function() {
+        //     const firstBlock = document.getElementById('cpf').value.substr(0, 3);
+        //     const secondBlock = document.getElementById('cpf').value.substr(3, 3);
+        //     const thirstBlock = document.getElementById('cpf').value.substr(6, 3);
+        //     const lastBlock = document.getElementById('cpf').value.substr(9, 2);
+        // alert('Seu CPF é ' + firstBlock + '.' + secondBlock + '.' + thirstBlock + '-' + lastBlock);
+        // });
+        // 9 - const btn = document.getElementById('btn');
+
+        // btn.addEventListener("click", function() {
+        //     const firstBlock = document.getElementById('cpf').value.substr(0, 3);
+        //     const secondBlock = document.getElementById('cpf').value.substr(4, 3);
+        //     const thirstBlock = document.getElementById('cpf').value.substr(8, 3);
+        //     const lastBlock = document.getElementById('cpf').value.substr(12, 2);
+
+        //     alert(firstBlock + secondBlock + thirstBlock + lastBlock);
+        // });
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener("click", function() {
+            const num1 = document.getElementById('num1').value;
+            const num2 = document.getElementById('num2').value;
+            document.getElementById('soma').value = Number(num1) + Number(num2);
+        });
+    </script>
+</body>
+</html>

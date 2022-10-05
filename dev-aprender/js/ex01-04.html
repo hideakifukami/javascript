@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Aprender - JavaScript</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <p>Nome Completo:</p>
+    <input type="text" name="name" id="name" placeholder="Digite Seu Nome">
+    <input type="button" value="Exibir Nome" id="btn">
+
+    <script type="text/javascript">
+        // alert('Olá Mundo');
+        const btn = document.getElementById('btn');
+
+       
+
+        btn.addEventListener("click",  function() {
+            const name = document.getElementById('name').value;
+            alert('O Nome Completo é: ' + name);     
+        });
+    </script>
+</body>
+</html>

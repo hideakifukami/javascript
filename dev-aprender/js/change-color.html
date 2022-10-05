@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Aprender - JavaScript</title>
+    <script src="js/script.js"></script>
+    <style>
+        #body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+        }
+
+        #green {
+            font-size: 1.5em;
+            padding: 10px;
+            color: white;
+            background-color: green;
+            border: 1px solid white;
+            position: relative;
+            transform: translateY(45vh);
+        }
+
+        #red {
+            font-size: 1.5em;
+            color: white;
+            padding: 10px;
+            background-color: red;
+            border: 1px solid white;
+            position: relative;
+            transform: translateY(45vh);
+        }
+    </style>
+</head>
+<body id="body">
+   <input type="button" value="Fundo Verde" id="green">
+   <input type="button" value="Fundo Vermelho" id="red">
+
+    <script type="text/javascript">
+       const green = document.getElementById('green');
+       const red = document.getElementById('red');
+
+       green.addEventListener("click", function() {
+        const body = document.getElementById('body');
+        body.style.backgroundColor = 'green';
+       });
+       
+       red.addEventListener("click", function() {
+        const body = document.getElementById('body');
+        body.style.backgroundColor = 'red';
+       });
+    </script>
+</body>
+</html>
